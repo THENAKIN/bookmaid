@@ -1,0 +1,133 @@
+{% extends "frontend/navs.html" %}
+{% load static %}
+
+{%block content%}
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<form action="//" method="post">
+
+  {% csrf_token %}
+
+  <form>
+    <div class="row">
+            <div class="col-md-4"></div>
+    
+    
+            <div class="col-md-4">
+                <section id="appointment" data-stellar-background-ratio="">
+                  <center><h2>บริการทำความสะอาด</h2></center>
+                    <div class="container">
+                           <div class="row">
+                              
+                
+                    <div class="col-6">
+                      <div class="input-group col-md-6 col-sm-6">
+                      <div class="input-group-prepend">
+                      </div>
+                      <label for="exampleFormControlSelect1">คุณต้องการใช้บริการที่ไหน</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>กรุงเทพ</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                
+                    <div class="col-12">
+                      <div class="input-group col-md-6 col-sm-6">
+                      <div class="input-group-prepend">
+                      </div>
+                      <label for="exampleFormControlSelect1" >กรุณาเลือกประเภทที่พัก</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>บ้าน 1 ชั้น (ไม่เกิน 100 ตร.ม.)</option>
+                        <option>บ้าน 2-3 ชั้น (ไม่เกิน 100-200 ตร.ม.)</option>
+                        <option>บ้าน (มากกว่า 200 ตร.ม.)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                      <div class="input-group col-md-6 col-sm-6">
+                      <div class="input-group-prepend">
+                      </div>
+                      <label for="exampleFormControlSelect1"><font color="#0cb9ff">แนะนำ 2 ชม. - 2 ชม. 30 นาที</font></label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="input-group col-md-6 col-sm-6">
+                    <div class="form-group">
+                    </div>
+                    <label for="exampleFormControlInput1">ต้องการใช้บริการนี้เมื่อไหร่</label>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="date">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="time" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="time">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  
+                  
+                  <div class="col-12">
+                    <div class="input-group col-md-6 col-sm-6">
+                    <div class="input-group-prepend">
+                      <div class="modal-footer">
+                      </div>
+                    </div>
+
+                    <div class="row">
+
+                      <div class="col-md-8">
+                        <label for="exampleFormControlSelect1" >ค่าบริการ (ยังไม่รวมภาษี)</label>
+                      </div>
+
+                      <div class="col-md-4">
+                        <h4 align = 'right'>$500</h4>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+<br>
+                    <div class="col-12">
+                      <div class="input-group col-md-6 col-sm-6">
+                      <div class="input-group-prepend">
+                      </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block btn-info">ค้นหาผู้ให้บริการ</button>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  </section>
+                </form>
+            </div>
+    
+    
+            <div class="col-md-4"></div>
+    </div>
+    </form>
+    
+</form>
+
+
+
+{% endblock %}
+

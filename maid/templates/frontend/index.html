@@ -1,0 +1,141 @@
+{% extends "frontend/navs.html" %}
+{% load static %}
+
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Health - Medical Website Template</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+     <link rel="stylesheet" href="css/tooplate-style.css">
+
+</head>
+
+<section id="team" data-stellar-background-ratio="1">
+  <div class="container">
+       <div class="row">
+
+            <div class="col-md-6 col-sm-6">
+                 <div class="about-info">
+                      <h2 class="wow fadeInUp" data-wow-delay="0.1s">บริการยอดนิยม</h2>
+                 </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-4 col-sm-6">
+                 <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                    <a href="/index_Cleaning">
+                      <img src="{% static 'images/Cleaning-service.jpg' %}" class="img-responsive" alt="">
+                           <div class="team-info">
+                                <h3>บริการทำความสะอาด</h3>
+                                <p>Cleaning service</p>
+            
+                           </div>
+                    </a>
+                 </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                 <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                    <a href="/index_Ironing">
+                      <img src="{% static 'images/Ironing-service.jpg' %}" class="img-responsive" alt="">
+
+                           <div class="team-info">
+                                <h3>บริการรีดผ้า</h3>
+                                <p>Ironing service</p>
+                                
+                           </div>
+                    </a>
+                 </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                 <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                    <a href="/index_Massage">
+                      <img src="{% static 'images/Massage-services.jpg' %}" class="img-responsive" alt="">
+
+                           <div class="team-info">
+                                <h3>บริการนวด</h3>
+                                <p>Massage services</p>
+                               
+                           </div>
+                    </a>
+                 </div>
+            </div>
+            
+       </div>
+  </div>
+</section>
+
+<section id="news" data-stellar-background-ratio="2.5">
+  <div class="container">
+       <div class="row">
+
+            <div class="col-md-12 col-sm-12">
+                 <!-- SECTION TITLE -->
+                 <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                      <h2>บริการอื่น ๆ </h2>
+                 </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                 <!-- NEWS THUMB -->
+                 <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
+                      <a href="/index_landscaping">
+                           <img src="{% static 'images/landscaping-service.jpg' %}" class="img-responsive" alt="">
+
+                      <div class="news-info">
+                           <h3>ทำสวน</h3></a>
+                           <p>landscaping service</p>
+                      </div>
+                 </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                 <!-- NEWS THUMB -->
+                 <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
+                      <a href="/index_Pool">
+                           <img src="{% static 'images/clean-the-pool.jpg' %}" class="img-responsive" alt="">
+
+                      <div class="news-info">
+                           <h3>ล้างสระว่ายน้ำ</h3></a>
+                           <p>Pool cleaning</p>
+                      </div>
+                 </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                 <!-- NEWS THUMB -->
+                 <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
+                      <a href="/index_Eliminate">
+                           <img src="{% static 'images/Eliminate-dust-mites.jpg' %}" class="img-responsive" alt="">
+          
+                      <div class="news-info">
+                           <h3>กำจักไรฝุ่น</h3></a>
+                           <p>Eliminate dust mites</p>
+                      </div>
+                 </div>
+            </div>
+            
+       </div>
+  </div>
+</section>
+
+
+{% endblock %}

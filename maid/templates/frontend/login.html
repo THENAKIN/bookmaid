@@ -1,0 +1,76 @@
+{% extends "frontend/navs.html" %}
+{% load static %}
+
+{%block content%}
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+{% if messages %}
+<div class="alert alert-danger" role="alert">
+  {% for message in messages  %}
+    <b>{{message}}</b>
+{% endfor %}
+</div>
+{% endif %}
+
+
+
+
+<form action="/login/" method="post">
+
+  {% csrf_token %}
+  
+<center>
+    <section id="appointment" data-stellar-background-ratio="3">
+      <center>
+        <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+          <h2>Login</h2>
+      </div>
+      </center>
+    <div class="container">
+           <div class="row">
+
+        <div class="col-12">
+            <div class="input-group col-md-6 col-sm-6">
+          <div class="input-group-prepend">
+          </div>
+          <input type="text" class="form-control" placeholder="username" aria-label="username" aria-describedby="basic-addon1" name= "username">
+        </div>
+            </div>
+        
+        <div class="col-12">
+            <div class="input-group col-md-6 col-sm-6">
+          <div class="input-group-prepend">
+          </div>
+          <input type="password" class="form-control" placeholder="Password" aria-label="password" aria-describedby="basic-addon1" name= "password">
+        </div>
+            </div>
+        </div>
+  
+      
+        <div class="col-4">
+          <div class="input-group col-md-6 col-sm-6">
+        <div class="input-group-prepend">
+        </div>
+
+        <p>ยังไม่มีสมาชิกใช่หรือไม่?? <a href="/register">สมัครสมาชิก</a></p>
+        <div class="modal-footer">
+          <button type="submit" class="form-control" id="cf-submit" name="submit">Submit</button>
+
+      </div>
+          </div>
+
+        
+          </div>
+        </div>
+        </section>
+        </center>
+  
+    </form>
+
+  
+    
+  {% endblock %}
